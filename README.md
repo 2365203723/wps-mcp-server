@@ -57,19 +57,19 @@ mcp-wps
 推荐用 Claude Code 命令添加：
 
 ```bash
-claude mcp add wps mcp-wps
+claude mcp add wps -- mcp-wps
 ```
 
 如果希望添加到用户级配置，并且你的 Claude Code 版本支持 scope：
 
 ```bash
-claude mcp add --scope user wps mcp-wps
+claude mcp add --scope user wps -- mcp-wps
 ```
 
 如果 `mcp-wps` 不在 PATH，可改用 Python 模块方式：
 
 ```bash
-claude mcp add wps python -m wps_server
+claude mcp add wps -- python -m wps_server
 ```
 
 也可以手动创建或修改项目下的 `.claude/mcp.json`：
